@@ -1,4 +1,4 @@
-package beat_can
+package com.github.hideto0710.beat_can
 
 sealed abstract class CanStatus(val text: String)
 case object NotYet extends CanStatus("having_breakfast")

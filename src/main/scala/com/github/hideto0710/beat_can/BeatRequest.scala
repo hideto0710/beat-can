@@ -1,4 +1,4 @@
-package beat_can
+package com.github.hideto0710.beat_can
 
 import scala.beans.BeanProperty
 

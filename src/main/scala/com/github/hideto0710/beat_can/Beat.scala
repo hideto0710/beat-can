@@ -1,4 +1,4 @@
-package beat_can
+package com.github.hideto0710.beat_can
 
 import com.amazonaws.services.lambda.runtime.{Context, RequestHandler}
 import com.gargoylesoftware.htmlunit.BrowserVersion
