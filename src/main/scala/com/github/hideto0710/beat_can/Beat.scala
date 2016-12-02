@@ -1,5 +1,7 @@
 package com.github.hideto0710.beat_can
 
+import java.util.logging.LogManager
+
 import com.amazonaws.services.lambda.runtime.{Context, RequestHandler}
 import com.gargoylesoftware.htmlunit.BrowserVersion
 import org.openqa.selenium.{JavascriptExecutor, UnhandledAlertException}
@@ -8,6 +10,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver
 object Beat extends RequestHandler[BeatRequest, Response] {
   implicit private val driver = new HtmlUnitDriver(BrowserVersion.CHROME)
   driver.setJavascriptEnabled(true)
+  LogManager.getLogManager.reset()
   private val Url = "https://ssl.jobcan.jp/login/pc-employee/"
 
   def main(args: Array[String]): Unit = {
